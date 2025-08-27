@@ -1,1 +1,52 @@
 
+1. Create Table: RESTART
+CREATE TABLE RESTART (
+    Student_ID INT,
+    Student_Name VARCHAR(100),
+    Restart_City VARCHAR(100),
+    Graduation_Date DATETIME
+);
+
+2. Insert 10 Sample Rows into RESTART
+INSERT INTO RESTART (Student_ID, Student_Name, Restart_City, Graduation_Date) VALUES
+(1, 'Alice Johnson', 'Beirut', '2025-06-30 10:00:00'),
+(2, 'Karim Mourad', 'Tripoli', '2025-07-15 14:30:00'),
+(3, 'Sara Khalil', 'Byblos', '2025-08-20 09:00:00'),
+(4, 'Omar Hassan', 'Sidon', '2025-09-05 11:00:00'),
+(5, 'Lina Fawaz', 'Zahle', '2025-07-25 13:45:00'),
+(6, 'Nour El Hajj', 'Baalbek', '2025-08-10 16:15:00'),
+(7, 'Hadi Chami', 'Tyre', '2025-09-12 12:30:00'),
+(8, 'Maya Karam', 'Tripoli', '2025-07-19 09:45:00'),
+(9, 'Fadi Salameh', 'Beirut', '2025-08-28 15:00:00'),
+(10, 'Rita Nassar', 'Byblos', '2025-09-20 10:20:00');
+
+3. Select All Rows from RESTART
+SELECT * 
+FROM RESTART;
+
+4. Create Table: CLOUD_PRACTITIONER
+CREATE TABLE CLOUD_PRACTITIONER (
+    Student_ID INT,
+    Certification_Date DATETIME
+);
+
+5. Insert 5 Sample Rows into CLOUD_PRACTITIONER
+INSERT INTO CLOUD_PRACTITIONER (Student_ID, Certification_Date) VALUES
+(1, '2025-01-15 09:30:00'),
+(2, '2025-02-10 14:00:00'),
+(3, '2025-03-05 11:15:00'),
+(4, '2025-04-20 16:45:00'),
+(5, '2025-05-12 10:00:00');
+
+6. Select All Rows from CLOUD_PRACTITIONER
+SELECT * 
+FROM CLOUD_PRACTITIONER;
+
+7. Inner Join Between RESTART and CLOUD_PRACTITIONER
+SELECT 
+    R.Student_ID,
+    R.Student_Name,
+    C.Certification_Date
+FROM RESTART R
+INNER JOIN CLOUD_PRACTITIONER C
+    ON R.Student_ID = C.Student_ID;
