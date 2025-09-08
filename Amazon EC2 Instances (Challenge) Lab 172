@@ -1,1 +1,13 @@
 
+1- create Lab-VPC CIDR 10.0.0.0/16 
+2- Create Public Subnet CIDR 10.0.0.0/24
+3- create IGW and attach it to Lab-VPC
+4- create Public Route Table
+5- Edit route Table from anysource to the IGW
+6- Edit Subnet Association and select Public Subnet
+7 - enable auto assign IP address for Subnet
+8- Create web security Group - allow ssh and Http(s)
+9 - create EC2 Instance
+sudo yum install httpd -y
+sudo systemctl start httpd.service
+
