@@ -1,7 +1,6 @@
 # AWS Lambda Word Count Lab
 
 This challenge lab teaches you how to use **AWS Lambda, Amazon S3, and Amazon SNS** to count words in a text file and email the result.  
-It is designed for students who are **new to AWS**.
 
 ---
 
